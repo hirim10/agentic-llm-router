@@ -85,16 +85,6 @@ A CLI-based agentic AI system where **Groq acts as both the brain and one of the
 
 ---
 
-## ⚙️ Routing Logic Summary
-
-| Condition | Executor | Model |
-|---|---|---|
-| complexity ≤ 6 AND tokens ≤ 800 | ⚡ Groq | `llama-3.1-8b-instant` (simple) or `llama-3.3-70b-versatile` (moderate) |
-| complexity > 6 OR tokens > 800 | 🌐 OpenRouter | Brain picks best model |
-| OpenRouter returns 402 (no credits) | ⚡ Groq fallback | `llama-3.3-70b-versatile` |
-
----
-
 ## 🚀 Setup
 
 ### 1. Install dependencies
